@@ -7,7 +7,7 @@
 ![](https://img.shields.io/github/release/kubil-ismail/react-js-boilerplate)
 ![](https://img.shields.io/github/issues/kubil-ismail/react-js-boilerplate)
 
-# About React Js Boilerplate
+# About
 React Js Boilerplate is a React js template to create web and make the development process even faster.
 
 ## Installation
