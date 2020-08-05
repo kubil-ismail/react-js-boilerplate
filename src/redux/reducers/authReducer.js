@@ -7,7 +7,7 @@ const defaultState = {
 const reducer = (state = defaultState, action) => {
   switch (action.type) {
     // Login Promise
-    case 'LOGIN_PENDING': {
+    case 'LOGIN': {
       return {
         ...defaultState,
         loading: true
@@ -21,9 +21,7 @@ const reducer = (state = defaultState, action) => {
     }
     // DEFAULT
     default: {
-      return {
-        ...state,
-      };
+      return state;
     }
   }
 };

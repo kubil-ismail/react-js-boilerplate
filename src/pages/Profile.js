@@ -5,7 +5,11 @@ import { connect } from 'react-redux';
 import { login } from '../redux/actions/authActions';
 
 export class Profile extends Component {
+  componentDidMount = () => {
+    this.props.login();
+  }
   render() {
+    console.log(this.props.auth)
     return (
       <>
         <p>Profile App</p>  
