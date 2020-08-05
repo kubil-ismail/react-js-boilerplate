@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "animate.css": "^4.1.0",
     "bootstrap": "^4.5.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -17,8 +16,7 @@
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
-    "redux-promise-middleware": "^6.1.2",
-    "sweetalert2": "^9.17.1"
+    "redux-promise-middleware": "^6.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
