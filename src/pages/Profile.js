@@ -8,8 +8,8 @@ export class Profile extends Component {
   componentDidMount = () => {
     this.props.login();
   }
+
   render() {
-    console.log(this.props.auth)
     return (
       <>
         <p>Profile App</p>  
