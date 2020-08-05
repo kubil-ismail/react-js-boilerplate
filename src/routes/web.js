@@ -5,5 +5,9 @@ import HomePage from '../pages/Home';
 import ProfilePage from '../pages/Profile';
 
 // Export Page
-export const Home = () => (<HomePage />);
-export const Profile = () => (<ProfilePage />);
+export const Home = () => {
+  return <HomePage />;
+};
+export const Profile = () => {
+  return <ProfilePage />;
+};
