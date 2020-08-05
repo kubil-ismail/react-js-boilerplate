@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
-export default class Profile extends Component {
+// Use Redux
+import { connect } from 'react-redux';
+import { login } from '../redux/actions/authActions';
+
+export class Profile extends Component {
   render() {
     return (
       <>
@@ -9,3 +13,11 @@ export default class Profile extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+});
+
+const mapDispatchToProps = { login };
+
+export default connect(mapStateToProps, mapDispatchToProps)(Profile);
