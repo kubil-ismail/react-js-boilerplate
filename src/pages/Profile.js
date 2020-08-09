@@ -4,9 +4,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { login } from '../redux/actions/authActions';
 
-// import firebase from 'firebase/app';
-import firebase from 'firebase/app';
-import { googleProvider } from '../firebase';
+// import firebase 
+import { auth, googleProvider } from '../firebase';
 
 export class Profile extends Component {
   componentDidMount = () => {
@@ -14,9 +13,7 @@ export class Profile extends Component {
   }
 
   googleAuth = () => {
-    firebase
-      .auth()
-      .signInWithPopup(googleProvider)
+      auth.signInWithPopup(googleProvider)
       .then((res) => {
         console.log(res)
       })
